@@ -1,5 +1,6 @@
+$id: https://jsonschemata.repodynamics.com/color/hsl-array
 $schema: https://json-schema.org/draft/2020-12/schema
-title: HSL Color
+title: HSL Color Array
 description: |
   An HSL color code as an array of three numbers:
   hue in degrees (0-360), followed by saturation and lightness as fractions between 0 and 1.

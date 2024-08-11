@@ -1,5 +1,6 @@
+$id: https://jsonschemata.repodynamics.com/color/rgba-array
 $schema: https://json-schema.org/draft/2020-12/schema
-title: RGBA Color
+title: RGBA Color Array
 description: |
   An RGBA color code as an array of four numbers:
   three integers between 0 and 255 for red, green, and blue, and

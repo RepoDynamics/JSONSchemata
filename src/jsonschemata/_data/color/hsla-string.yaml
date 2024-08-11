@@ -1,0 +1,12 @@
+$id: https://jsonschemata.repodynamics.com/color/hsla-string
+$schema: https://json-schema.org/draft/2020-12/schema
+title: HSLA Color String
+description: |
+  An HSLA color code as a string of format "hsla({H}, {S}, {L}, {A})", e.g., "hsla(0, 100%, 50%, 0.5)".
+type: string
+pattern: ^hsla\(\s*(\d{1,3})\s*,\s*(\d{1,3})%\s*,\s*(\d{1,3})%\s*,\s*(0|0?\.\d+|1)\s*\)$
+examples:
+    - 'hsla(0, 100%, 50%, 1)'
+    - 'hsla( 120, 100%, 50%, 0.5 )'
+    - 'hsla(240,100%,50%,0.25)'
+    - 'hsla( 0,  0%, 0%,  0 )'

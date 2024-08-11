@@ -1,6 +1,9 @@
+$id: https://jsonschemata.repodynamics.com/color/hex-string
 $schema: https://json-schema.org/draft/2020-12/schema
-title: HEX Color
-description: A hexadecimal color code.
+title: HEX Color String
+description: |
+  A hexadecimal color code as a string of 3 or 6 characters,
+  optionally preceded by a '#' symbol.
 type: string
 pattern: ^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$
 examples:

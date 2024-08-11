@@ -21,6 +21,6 @@ version = "0.0.0.dev0"
 name = "JSONSchemata"
 dependencies = [
     "jsonschema >= 4.21.0, < 5",
-    "referencing == 0.35.1",
+    "referencing >= 0.35.1",
 ]
 requires-python = ">=3.10"

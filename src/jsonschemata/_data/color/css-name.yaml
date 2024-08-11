@@ -1,9 +1,10 @@
+$id: https://jsonschemata.repodynamics.com/color/css-name
 $schema: https://json-schema.org/draft/2020-12/schema
 title: CSS Named Color
 description: A CSS named color.
-type: string
 $comment: >-
   Reference: https://github.com/bahamas10/css-color-names
+type: string
 enum:
   - aliceblue
   - antiquewhite

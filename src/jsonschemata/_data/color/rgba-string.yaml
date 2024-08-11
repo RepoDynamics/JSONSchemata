@@ -1,0 +1,12 @@
+$id: https://jsonschemata.repodynamics.com/color/rgba-string
+$schema: https://json-schema.org/draft/2020-12/schema
+title: RGBA Color String
+description: |
+  An RGBA color code as a string of format "rgba({R}, {G}, {B}, {A})", e.g., "rgba(255, 0, 100, 0.5)".
+type: string
+pattern: ^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(0|1|0\.\d+)\s*\)$
+examples:
+  - 'rgba(255, 0, 0, 1)'
+  - 'rgba(0,255,0,0.5)'
+  - 'rgba( 0, 0, 255, 0.25 )'
+  - 'rgba( 255,255,255,0 )'
