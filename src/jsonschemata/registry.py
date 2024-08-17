@@ -33,7 +33,7 @@ def make(
         all resources so that the registry is
         [fully ready](https://referencing.readthedocs.io/en/stable/schema-packages/).
     add_resources: list[dict | referencing.Resource | tuple[str, dict | referencing.Resource]] | None, default: None
-        A list of additional resources to add to the registry. Each resource can be a dictionary,
+        A list of additional resources to add to the registry. Each resource can be a dictionary or
         a [`referencing.Resource`](https://referencing.readthedocs.io/en/stable/api/#referencing.Resource)
         object. If a resource does not have an "$id",
         the ID must be provided along with the resource as a tuple of (ID, resource).
