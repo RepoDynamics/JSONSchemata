@@ -5,7 +5,7 @@ description: |
   A URL with an explicit FTP(S) scheme.
 type: string
 format: uri
-pattern: ^ftps?:\/\/(?:[a-zA-Z0-9_-]+(?::[^\s:@]*)?@)?[a-zA-Z0-9.-]+(?::\d{1,5})?(?:\/[^\s]*)?$
+pattern: ^ftps?://(?:[a-zA-Z0-9_-]+(?::[^\s:@]*)?@)?[a-zA-Z0-9.-]+(?::\d{1,5})?(?:/[^\s]*)?$
 examples:
   - 'ftp://example.com:21'
   - 'ftps://example.com:21'
