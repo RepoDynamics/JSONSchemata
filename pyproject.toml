@@ -17,12 +17,12 @@ namespaces = true
 # ----------------------------------------- Project Metadata -------------------------------------
 #
 [project]
-version = "0.0.0.dev23"
+version = "0.0.0.dev24"
 name = "JSONSchemata"
 dependencies = [
     "referencing >= 0.35.1",
     "PkgData == 0.0.0.dev5",
-    "PySerials == 0.0.0.dev27",
-    "PyLinks == 0.0.0.dev37",
+    "PySerials == 0.0.0.dev28",
+    "PyLinks == 0.0.0.dev38",
 ]
 requires-python = ">=3.10"
