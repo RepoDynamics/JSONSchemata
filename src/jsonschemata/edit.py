@@ -46,6 +46,8 @@ def add_property(schema: dict, prop: str, value: dict) -> dict:
     """
     if "properties" in schema:
         schema["properties"][prop] = value
+        for subschema in schema["properties"].values():
+            add_property(subschema, prop, value)
     for key in ["anyOf", "allOf", "oneOf", "prefixItems"]:
         if key in schema:
             for subschema in schema[key]:
