@@ -10,4 +10,4 @@ items:
   type: string
   minLength: 1
 examples:
-  - [ 'string1', 'string2', 'string3' ]
+  - [ string1, string2, string3 ]
