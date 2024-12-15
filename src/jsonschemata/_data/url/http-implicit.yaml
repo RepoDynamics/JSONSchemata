@@ -1,6 +1,6 @@
 $id: https://jsonschemata.repodynamics.com/url/http-implicit
 $schema: https://json-schema.org/draft/2020-12/schema
-title: HTTP(S) URL
+title: Implicit HTTP(S) URL
 description: |
   A URL with an optional HTTP or HTTPS scheme.
 type: string

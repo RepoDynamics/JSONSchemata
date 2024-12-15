@@ -1,6 +1,6 @@
 $id: https://jsonschemata.repodynamics.com/url/http-ftp-sftp
 $schema: https://json-schema.org/draft/2020-12/schema
-title: FTP(S) URL
+title: Explicit URL
 description: |
   A URL with an explicit FTP(S) scheme.
 type: string
