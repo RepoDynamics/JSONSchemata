@@ -2,7 +2,7 @@ $id: https://jsonschemata.repodynamics.com/array/unique-strings
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Array of Unique Strings
 description: |
-  A non-empty array of unique strings.
+  An array of non-empty strings with unique elements.
 type: array
 uniqueItems: true
 minItems: 0

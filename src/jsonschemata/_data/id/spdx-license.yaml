@@ -3,9 +3,10 @@ $schema: https://json-schema.org/draft/2020-12/schema
 $comment: |
   Use https://github.com/citation-file-format/get-spdx-licenses to update
   this enum in the future
-title: >-
-  [SPDX](https://spdx.org/licenses/) license ID.
+title: SPDX License ID
 description: |
+  An [SPDX](https://spdx.org/licenses/) license identifier.
+  
   For a full list of machine-readable SPDX license identifiers, see the
   [SPDX GitHub repository](https://raw.githubusercontent.com/spdx/license-list-data/master/json/licenses.json)
   or the [CFF GitHub repository](https://github.com/citation-file-format/get-spdx-licenses).

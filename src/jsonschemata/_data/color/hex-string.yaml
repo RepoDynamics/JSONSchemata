@@ -2,13 +2,11 @@ $id: https://jsonschemata.repodynamics.com/color/hex-string
 $schema: https://json-schema.org/draft/2020-12/schema
 title: Hex RGB Color String
 description: |
-  A hexadecimal color in the sRGB color space
-  acoording to its red, green, and blue components.
-  An optional alpha channel may be specified for transparency.
+  A [hexadecimal color](https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color)
+  in the sRGB color space.
   
-  For more information, see:
-  - [CSS hex-color](https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color)
-
+  The color is defined according to its red, green, and blue components, respectively.
+  An optional alpha channel may be specified for transparency.
 type: string
 pattern: ^#([0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$
 examples:
