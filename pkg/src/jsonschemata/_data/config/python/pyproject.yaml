@@ -27,7 +27,8 @@ properties:
     required: [ requires ]
     properties:
       build-backend:
-        summary: [Build backend](https://packaging.python.org/en/latest/glossary/#term-Build-Backend) name.
+        summary: >-
+          [Build backend](https://packaging.python.org/en/latest/glossary/#term-Build-Backend) name.
         description: |
           Learn more about [choosing](https://packaging.python.org/en/latest/tutorials/packaging-projects/#choosing-build-backend)
           and [declaring](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#declaring-the-build-backend)
@@ -56,7 +57,8 @@ properties:
           - setuptools
           - setuptools >=72.1.0
   project:
-    summary: [Project metadata](https://packaging.python.org/en/latest/specifications/pyproject-toml/#declaring-project-metadata-the-project-table).
+    summary: >-
+      [Project metadata](https://packaging.python.org/en/latest/specifications/pyproject-toml/#declaring-project-metadata-the-project-table).
     description: |
       This corresponds to [core metadata](https://packaging.python.org/en/latest/specifications/core-metadata)
       specifications for Python projects, including the project name, version, and description.
@@ -202,10 +204,10 @@ properties:
             The filename or glob must be a valid path relative to the root of the project.
           type: string
           minLength: 1
-        examples:
-          - LICENSE
-          - LICENSE.txt
-          - LICENSE.*
+          examples:
+            - LICENSE
+            - LICENSE.txt
+            - LICENSE.*
       authors:
         summary: Project [authors](https://packaging.python.org/en/latest/specifications/pyproject-toml/#authors-maintainers).
         description: |
@@ -240,7 +242,8 @@ properties:
           - analysis
           - machine learning
       classifiers:
-        summary: [Trove classifiers](https://packaging.python.org/en/latest/specifications/pyproject-toml/#classifiers).
+        summary: >-
+          [Trove classifiers](https://packaging.python.org/en/latest/specifications/pyproject-toml/#classifiers).
         description: |
           An array of strings that provide additional metadata about the project. 
           These strings are used to help categorize the project and make it more discoverable.
@@ -269,8 +272,8 @@ properties:
           - 'Topic :: Scientific/Engineering :: Artificial Intelligence'
           - Development Status :: 3 - Alpha
           - Intended Audience :: Developers
-          - License :: OSI Approved :: MIT License
-          - Programming Language :: Python :: 3
+          - 'License :: OSI Approved :: MIT License'
+          - 'Programming Language :: Python :: 3'
         type: array
         uniqueItems: true
         items:
@@ -458,8 +461,10 @@ properties:
       type: object
     properties:
       setuptools:
-        summary: [Setuptools](https://setuptools.pypa.io/) configuration.
+        summary: >-
+          [Setuptools](https://setuptools.pypa.io/) configuration.
         $ref: https://jsonschemata.repodynamics.com/config/setuptools
       versioningit:
-        summary: [Versioningit](https://pypi.org/project/versioningit/) configuration.
+        summary: >-
+          [Versioningit](https://pypi.org/project/versioningit/) configuration.
         $ref: https://jsonschemata.repodynamics.com/config/versioningit

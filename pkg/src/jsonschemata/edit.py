@@ -26,12 +26,13 @@ def required_last(schema: dict) -> dict:
         if key in schema:
             for subschema in schema[key]:
                 required_last(subschema)
-    for key in ["if", "then", "else", "not", "items", "unevaluatedItems", "contains", "additionalProperties", "patternProperties", "unevaluatedProperties"]:
+    for key in ["if", "then", "else", "not", "items", "unevaluatedItems", "contains", "additionalProperties", "unevaluatedProperties"]:
         if key in schema and isinstance(schema[key], dict):
             required_last(schema[key])
-    if "properties" in schema and isinstance(schema["properties"], dict):
-        for subschema in schema["properties"].values():
-            required_last(subschema)
+    for key in ["properties", "patternProperties"]:
+        if key in schema and isinstance(schema[key], dict):
+            for subschema in schema[key].values():
+                required_last(subschema)
     return schema
 
 
