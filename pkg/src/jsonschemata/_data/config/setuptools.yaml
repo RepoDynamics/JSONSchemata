@@ -10,7 +10,6 @@ description: |
   For more information, see
   [Configuring setuptools using pyproject.toml files](https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html).
 type: object
-additionalProperties: false
 properties:
   include-package-data:
     summary: Whether to include package data.

@@ -176,7 +176,18 @@ properties:
           Text string that is a valid [SPDX license expression](https://peps.python.org/pep-0639/#term-license-expression)
           as defined in [PEP 639](https://peps.python.org/pep-0639).
           Tools SHOULD validate and perform case normalization of the expression.
-        type: string
+        oneOf:
+          - type: string
+          - type: object
+            additionalProperties: false
+            oneOf:
+              - required: [ file ]
+              - required: [ text ]
+            properties:
+              file:
+                type: string
+              text:
+                type: string
         examples:
           - MIT
           - MIT AND (Apache-2.0 OR BSD-2-Clause)
